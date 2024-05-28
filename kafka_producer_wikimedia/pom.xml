@@ -3,31 +3,30 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.springland365</groupId>
-    <artifactId>kafkabasics</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
-
     <parent>
-        <artifactId>kafka101</artifactId>
         <groupId>com.springland365</groupId>
+        <artifactId>kafka101</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <artifactId>kafka_producer_wikimedia</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
             <version>3.7.0</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/com.squareup.okhttp3/okhttp -->
+
+        <!-- https://mvnrepository.com/artifact/com.launchdarkly/okhttp-eventsource -->
         <dependency>
-            <groupId>com.squareup.okhttp3</groupId>
-            <artifactId>okhttp</artifactId>
-            <version>4.12.0</version>
+            <groupId>com.launchdarkly</groupId>
+            <artifactId>okhttp-eventsource</artifactId>
+            <version>2.7.1</version>
         </dependency>
 
 
 
     </dependencies>
+
 </project>
